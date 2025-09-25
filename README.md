@@ -55,3 +55,19 @@ In pgAdmin, add a new server:
 docker-compose down
 ```
 
+### ✨ Notes
+
+- All SQL is written for **PostgreSQL**.  
+- Solutions are just one approach — try your own first!  
+- **Database persistence:**  
+  - Docker volumes (`postgres_data`) **persist your database** even if you stop or remove containers.  
+  - Running `docker-compose down` only stops and removes containers — your data stays intact.  
+  - Running `docker-compose down -v` **removes volumes** and resets the database.
+
+---
+
+### Contributing
+
+- Add new problems to the `problems/` folder.  
+- Add solutions to the `solutions/` folder.  
+- Follow existing file naming conventions.
