@@ -205,3 +205,26 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Docker-related
+*.env
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.override.*
+
+# Postgres data volume
+postgres_data/
+
+# pgAdmin storage / config
+pgadmin_data/
+pgadmin4.db
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
