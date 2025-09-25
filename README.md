@@ -12,7 +12,7 @@ It’s a simple playground where you can run queries, test yourself, and then ch
 
 ### 1. Clone this Repo
 ```bash
-git clone https://github.com/<your-username>/sql-practice-playground.git
+git clone https://github.com/iagam/sql-practice-playground.git
 cd sql-practice-playground
 ```
 
