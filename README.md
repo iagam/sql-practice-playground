@@ -17,12 +17,12 @@ cd sql-practice-playground
 
 ### 2. Start PostgreSQL + pgAdmin
 
-We use Docker Compose to run both services together.
-
-Make sure Docker is installed, then run:
+Make sure Docker Desktop  is installed and running, then run:
 ```bash
 docker-compose up -d
 ```
+- Docker Desktop will download the images if needed.
+- Containers will start in the background.
 
 ### 3. Access the Services
 
