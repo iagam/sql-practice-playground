@@ -6,7 +6,8 @@ It’s a simple playground where you can run queries, test yourself, and then ch
 ## 🚀 Getting Started
 
 ### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running  
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running
+- [Git](https://git-scm.com/) installed to clone the repository (alternatively you can use **Github Desktop**)
 - Basic familiarity with running commands in **Terminal / PowerShell / CMD**
 
 ### 1. Clone this Repo
