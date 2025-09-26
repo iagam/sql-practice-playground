@@ -74,4 +74,4 @@ INSERT INTO address (addressId, personId, city, state) values ('2', '3', 'Leetco
 ```
 
 Solution:
-Find the solution here [Solution SQL File](../solutions/solution1.sql)
+Find the solution here [Solution SQL File](../solutions/1-combine-two-tables.sql)
