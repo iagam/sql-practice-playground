@@ -1,6 +1,6 @@
 ### Combine Two Tables
 
-Table: `Person`
+## Table: `person`
 
 | Column Name | Type    |
 |-------------|---------|
@@ -11,7 +11,7 @@ Table: `Person`
 `personId` is the primary key (column with unique values) for this table.
 This table contains information about the ID of some persons and their first and last names.
 
-Table: `Address`
+## Table: `address`
 
 | Column Name | Type    |
 |-------------|---------|
@@ -29,17 +29,16 @@ Return the result table in any order.
 
 The result format is in the following example.
 
-**Example 1**:
+## Example 1
 
-Input:
-`Person` table:
+Input:<br>`person` table:
 
 | personId | lastName | firstName |
 |----------|----------|-----------|
 | 1        | Wang     | Allen     |
 | 2        | Alice    | Bob       |
 
-`Address` table:
+`address` table:
 
 | addressId | personId | city          | state      |
 |-----------|----------|---------------|------------|
@@ -53,11 +52,11 @@ Output:
 | Allen     | Wang     | Null          | Null     |
 | Bob       | Alice    | New York City | New York |
 
-Explanation:
+## Explanation
 There is no address in the address table for the personId = 1 so we return null in their city and state.
 addressId = 1 contains information about the address of personId = 2.
 
-Schema:
+## Schema
 Create the schema first then attempt the solution.
 
 ```bash
@@ -73,5 +72,5 @@ INSERT INTO address (addressId, personId, city, state) values ('1', '2', 'New Yo
 INSERT INTO address (addressId, personId, city, state) values ('2', '3', 'Leetcode', 'CalIFornia');
 ```
 
-Solution:
-Find the solution here [Solution SQL File](../solutions/1-combine-two-tables.sql)
+## Solution
+Find the solution here [`Solution SQL`](../solutions/1-combine-two-tables.sql)
