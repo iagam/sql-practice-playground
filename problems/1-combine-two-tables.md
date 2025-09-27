@@ -1,4 +1,4 @@
-### Combine Two Tables
+# Combine Two Tables
 
 ## Table: `person`
 
@@ -31,7 +31,7 @@ The result format is in the following example.
 
 ## Example 1
 
-Input:<br>`person` table:
+**Input:**<br>`person` table:
 
 | personId | lastName | firstName |
 |----------|----------|-----------|
@@ -45,29 +45,30 @@ Input:<br>`person` table:
 | 1         | 2        | New York City | New York   |
 | 2         | 3        | Leetcode      | California |
 
-Output:
+**Output:**
 
 | firstName | lastName | city          | state    |
 |-----------|----------|---------------|----------|
 | Allen     | Wang     | Null          | Null     |
 | Bob       | Alice    | New York City | New York |
 
-## Explanation
-There is no address in the address table for the personId = 1 so we return null in their city and state.
+**Explanation:**<br>
+There is no address in the address table for the personId = 1 so we return null in their city and state.<br>
 addressId = 1 contains information about the address of personId = 2.
 
 ## Schema
 Create the schema first then attempt the solution.
 
 ```bash
+DROP TABLE IF EXISTS person;
+DROP TABLE IF EXISTS address;
+
 CREATE TABLE IF NOT EXISTS person (personId int, firstName varchar(255), lastName varchar(255));
 CREATE TABLE IF NOT EXISTS address (addressId int, personId int, city varchar(255), state varchar(255));
 
-TRUNCATE TABLE person;
 INSERT INTO person (personId, lastName, firstName) values ('1', 'Wang', 'Allen');
 INSERT INTO person (personId, lastName, firstName) values ('2', 'Alice', 'Bob');
 
-TRUNCATE TABLE address;
 INSERT INTO address (addressId, personId, city, state) values ('1', '2', 'New York City', 'New York');
 INSERT INTO address (addressId, personId, city, state) values ('2', '3', 'Leetcode', 'CalIFornia');
 ```
