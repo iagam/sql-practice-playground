@@ -1,4 +1,4 @@
-# department Highest Salary
+# Department Highest Salary
 
 ## Table: employee
 
