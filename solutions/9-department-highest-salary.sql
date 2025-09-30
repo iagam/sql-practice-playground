@@ -13,4 +13,4 @@ SELECT
 FROM employee e
 JOIN department d ON d.id = e.departmentid
 ) sub
-WHERE salary_rank = 1
+WHERE salary_rank = 1;
